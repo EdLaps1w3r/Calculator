@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./calculator.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+    <p id="calcDisplay"></p>
+    <h1 id="calcBigDisplay"></h1>
+    </div>
+    <br>    
+    <button id="1" onclick="calcInterface(1)">1</button>
+    <button id="2" onclick="calcInterface(2)">2</button>
+    <button id="3" onclick="calcInterface(3)">3</button>
+    <button id="4" onclick="calcInterface(4)">4</button>
+    <button id="5" onclick="calcInterface(5)">5</button>
+    <button id="6" onclick="calcInterface(6)">6</button>
+    <button id="7" onclick="calcInterface(7)">7</button>
+    <button id="8" onclick="calcInterface(8)">8</button>
+    <button id="9" onclick="calcInterface(9)">9</button>
+    <button id="0" onclick="calcInterface(0)">0</button>
+    <button id="+" onclick="calcInterface('+')">+</button>
+    <button id="-" onclick="calcInterface('-')">-</button>
+    <button id="=" onclick="calcInterface('=')">=</button>
+    <button id="-" onclick="calcInterface('x')">x</button>
+    <button id="=" onclick="calcInterface('/')">/</button>
+    <button id="clear" onclick="calcInterface('C')">C</button>
+
+    <div>
+        <p id="history"></p>
+    </div>
+</body>
+</html>
