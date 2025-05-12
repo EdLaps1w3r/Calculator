@@ -8,29 +8,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-    <p id="calcDisplay"></p>
-    <h1 id="calcBigDisplay"></h1>
+    <div id="calc">
+        <h1 id="title">Calculator</h1>
+        <p id="calcDisplay"></p>
+        <h1 id="calcBigDisplay"></h1>
+        <div id="buttonHolder">
+            <button class="number" onclick="calcInterface(1)">1</button>
+            <button class="number" onclick="calcInterface(2)">2</button>
+            <button class="number" onclick="calcInterface(3)">3</button>
+            <button class="operator" onclick="calcInterface('AC')">AC</button>
+            <button class="operator" onclick="calcInterface('C')">C</button>
+            <button class="number" onclick="calcInterface(4)">4</button>
+            <button class="number" onclick="calcInterface(5)">5</button>
+            <button class="number" onclick="calcInterface(6)">6</button>
+            <button class="operator" onclick="calcInterface('+')">+</button>
+            <button class="operator" onclick="calcInterface('-')">-</button>
+            <button class="number" onclick="calcInterface(7)">7</button>
+            <button class="number" onclick="calcInterface(8)">8</button>
+            <button class="number" onclick="calcInterface(9)">9</button>
+            <button class="operator" onclick="calcInterface('x')">x</button>
+            <button class="operator" onclick="calcInterface('/')">/</button>
+            <button class="number" onclick="calcInterface(0)">0</button>
+            <button class="operatorB" onclick="calcInterface('.')">.</button>
+            <button class="operatorB" onclick="calcInterface('=')">=</button>
+        </div>
     </div>
-    <br>    
-    <button id="1" onclick="calcInterface(1)">1</button>
-    <button id="2" onclick="calcInterface(2)">2</button>
-    <button id="3" onclick="calcInterface(3)">3</button>
-    <button id="4" onclick="calcInterface(4)">4</button>
-    <button id="5" onclick="calcInterface(5)">5</button>
-    <button id="6" onclick="calcInterface(6)">6</button>
-    <button id="7" onclick="calcInterface(7)">7</button>
-    <button id="8" onclick="calcInterface(8)">8</button>
-    <button id="9" onclick="calcInterface(9)">9</button>
-    <button id="0" onclick="calcInterface(0)">0</button>
-    <button id="+" onclick="calcInterface('+')">+</button>
-    <button id="-" onclick="calcInterface('-')">-</button>
-    <button id="=" onclick="calcInterface('=')">=</button>
-    <button id="-" onclick="calcInterface('x')">x</button>
-    <button id="=" onclick="calcInterface('/')">/</button>
-    <button id="clear" onclick="calcInterface('C')">C</button>
-
+       
+    
     <div>
+        <h1>History</h1>
         <p id="history"></p>
     </div>
 </body>
